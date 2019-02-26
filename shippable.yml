@@ -1,0 +1,14 @@
+language: ruby
+
+# env:
+#   global:
+#     - SHIPPABLE_BUNDLER_VERSION=2.0.0
+
+rvm:
+  - 2.5
+
+build:
+  ci:
+    - ruby -v
+    - gem install rspec_junit_formatter
+    - rspec --format progress --format RspecJunitFormatter --out rspec.xml
