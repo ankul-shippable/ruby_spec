@@ -12,3 +12,5 @@ build:
     - ruby -v
     - bundle install 
     - bundle exec rspec .
+    - apt-get install tree
+    - tree
