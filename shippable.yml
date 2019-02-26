@@ -10,5 +10,5 @@ rvm:
 build:
   ci:
     - ruby -v
-    - gem install rspec_junit_formatter
-    - rspec --format progress --format RspecJunitFormatter --out rspec.xml
+    - bundle install 
+    - bundle exec rspec .
